@@ -45,7 +45,7 @@ export function SignUp() {
               <LabelledInput type="text" label="Email" placeholder="udayprakash80@yahoo.com" onChange= {(e) => {
                 setPostInputs({
                   ...postInputs,
-                  email: e.target.value
+                  email: (e.target as HTMLInputElement).value
                 })
               }}></LabelledInput>
             </div>
@@ -53,7 +53,7 @@ export function SignUp() {
               <LabelledInput type="password" label="Password" placeholder="******" onChange= {(e) => {
                 setPostInputs({
                   ...postInputs,
-                  password: e.target.value
+                  password: (e.target as HTMLInputElement).value
                 })
               }}></LabelledInput>
             </div>
@@ -61,7 +61,7 @@ export function SignUp() {
               <LabelledInput type="text" label="Name" placeholder="Udaya Bihari" onChange= {(e) => {
                 setPostInputs( {
                   ...postInputs,
-                  name: e.target.value
+                  name: (e.target as HTMLInputElement).value
                 })
               }}></LabelledInput>
             </div>
