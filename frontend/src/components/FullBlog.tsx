@@ -1,4 +1,3 @@
-import {Appbar} from "./Appbar";
 import {Avatar} from "./blogCard";
 import {Blog} from "../interface";
 
