@@ -3,7 +3,7 @@ import {Appbar} from "../components/Appbar";
 import {useBlogs} from "../hooks";
 import {BlogsSkeleton} from "../components/BlogsSkeleton";
 
-export function Blogs() {
+export const Blogs = () => {
   const{loading, blogs} = useBlogs();
   if(loading){
     return (
@@ -15,7 +15,8 @@ export function Blogs() {
       </div>
     )
   }
-  return (
+
+    return (
     <div>
       <Appbar/>
       {blogs.map(blog =>
